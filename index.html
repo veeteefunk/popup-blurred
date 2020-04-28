@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Popup with blurred background | CSS & JS</title>
+  </head>
+  <body>
+    <div class="container" id="blur">
+      <div class="content">
+        <h2>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam fugiat
+          voluptas inventore veniam pariatur, numquam ex facere nam temporibus
+          esse!
+        </h2>
+        <img src="cake.jpg" alt="" />
+        <a href="#" onclick="toggle()">Read More</a>
+      </div>
+    </div>
+    <div id="popup">
+      <h2>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae,
+        cupiditate.
+      </h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero ab
+        fugit earum doloremque? Molestias debitis itaque distinctio repudiandae
+        quis ducimus eligendi at a reprehenderit consequatur, velit nisi
+        dignissimos praesentium vero quia, adipisci autem quibusdam neque rem
+        veniam quidem alias! Laudantium mollitia esse natus sint ad iste.
+        Dolores vel non iste fugiat consequatur consectetur? Est tempora velit
+        accusamus repudiandae explicabo aut!
+      </p>
+      <a href="#" onclick="toggle()">Close</a>
+    </div>
+
+    <script>
+      function toggle() {
+        var blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+        var popup = document.getElementById("popup");
+        popup.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
